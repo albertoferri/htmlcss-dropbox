@@ -4,5 +4,52 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* inizio header */
+header{
+    background-color: #b7cfe6;
+    height: 850px;
+    width: 100%;
+}
+header>h1{
+    border: 2px red solid;
+}
+
+
+
+
 /* inizio navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    z-index: 2;
+}
+
+.nav-left,.nav-right{
+    border: 2px red solid;
+    width: 400px;
+    /* test */
+
+}
+/* fine navbar */
+
+/* container big */
+
+.container-big{
+    max-width: 1300px;
+    mar
+}
+
+
+
+/* fine container big */
