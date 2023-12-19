@@ -15,7 +15,7 @@ header{
     position: relative;
     background-color: #b7cfe6;
     width: 100%;
-    height: 800px;
+    height: 740px;
 }
 header h1{
     border: 2px red solid;
@@ -72,7 +72,7 @@ nav{
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
-    padding-top: 180px;
+    padding-top: 120px;
     padding-left: 70px;
 }
 
@@ -102,7 +102,7 @@ nav{
 
 #img-header{
     position: relative;
-    top: 180px;
+    top: 120px;
     width: 820px;
     height: 488px;
 }
@@ -134,6 +134,7 @@ h2{
     min-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 32px;
 }
 
 .plans-btn{
@@ -225,6 +226,7 @@ h3{
 
 
 .adv-container{
+    display: flex;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -268,9 +270,46 @@ h3{
   padding: 10px;
 }
 
-/* .text-overflow{
+.text-overflow{
     background-color: #f5f5f5;
-    width: 666px;
+    min-width: 666px;
     height: 666px;
-} */
+}
+
+/* inizio advice */
+.advice{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #b7cfe6;
+    height: 370px;
+}
+
+.prova{
+    width: 100%; 
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+.advice span{
+    color: #5f0a2b;
+    font-size: 32px;
+    margin-top: 20px;
+    height: 100px;
+    width: 370px;
+}
+
+.advice .free-trial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    align-self: center;
+}
+
+
+
+/* fine advice */
+
 /* fine main */
