@@ -228,37 +228,32 @@ h3{
 .adv-container{
     display: flex;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
+
 .sponsor{
     display: flex;
     flex-wrap: wrap;
 }
 
 .square{
-    background-color: orangered;
     width: 333px;
     height: 333px;
-    max-width: 1000px;
 }
 
 
 .sponsor {
-  width: calc(100% / 3);
-  min-width: 666px;
+  width: 666px;
   height: auto;
-  box-shadow: 0 0 0 1px red;
   display: flex;
+  flex-grow: 1;
 }
 
 .square {
+  background-color: orangered;
   position: relative;
   width: 50%;
   display: block;
-  padding-top: 50%;
   margin: 0;
-  border-color: 2px dotted white;
 }
 
 .square > div {
@@ -272,7 +267,7 @@ h3{
 
 .text-overflow{
     background-color: #f5f5f5;
-    width: calc(100% / 3s);
+    min-width: calc(100% / 3);
     height: 666px;
 }
 
@@ -288,6 +283,7 @@ h3{
 .prova{
     width: 100%; 
     display: flex;
+    justify-content: center;
     gap: 50px;
     padding: 20px;
 }
@@ -311,10 +307,18 @@ h3{
 /* fine advice */
 
 /* inizio sezione FAQ */
+.faq{
+    padding: 30px 0 70px;
+}
+
 .faq hr{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.faq h2{
+    padding: 170px 0 75px;
 }
 
 .faq h3{
@@ -327,3 +331,55 @@ h3{
 /* fine sezione FAQ */
 
 /* fine main */
+
+/* footer */
+footer{
+    height: 570px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 120px 0 0;
+}
+
+.footer-layout{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .footer-column{
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.footer-column ul{
+    list-style-type: none;
+}
+
+.footer-column>h3{
+    text-align: left;
+    padding: 20px 0;
+}
+
+.footer-column li{
+    color: white;
+    margin: 20px 0;
+}
+
+#lang-set{
+    width: 1200px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#short-hr{
+    width: 126px;
+}
+
+/* finefooter */
