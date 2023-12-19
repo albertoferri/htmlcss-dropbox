@@ -10,9 +10,10 @@ body{
 
 /* inizio header */
 header{
+    position: relative;
     background-color: #b7cfe6;
     width: 100%;
-    height: 550px;
+    height: 800px;
 }
 header h1{
     border: 2px red solid;
@@ -52,10 +53,17 @@ nav{
     gap: 20px;
 }
 
-.textaside{
+.text{
     width: 370px;
     height: 130px;
     background-color: green;
+}
+
+.asidetext{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    padding-top: 100px;
 }
 
 .free-trial{
@@ -73,7 +81,6 @@ nav{
 
 .set-text.sidetext{
     display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 
@@ -81,6 +88,13 @@ nav{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+#img-header{
+    position: relative;
+    top: 100px;
+    width: 820px;
+    height: 488px;
 }
 
 
