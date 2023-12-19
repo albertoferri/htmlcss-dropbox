@@ -6,19 +6,17 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* inizio header */
 header{
     background-color: #b7cfe6;
-    height: 850px;
     width: 100%;
+    height: 550px;
 }
-header>h1{
+header h1{
     border: 2px red solid;
+    font-size: 62px;
 }
 
 
@@ -46,10 +44,44 @@ nav{
 /* container big */
 
 .container-big{
-    max-width: 1300px;
-    mar
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
+.textaside{
+    width: 370px;
+    height: 130px;
+    background-color: green;
+}
+
+.free-trial{
+    width: 236px;
+    height: 47px;
+    background-color: #3d56fd;
+    color: white;
+}
+
+.unsubscribe{
+    border: 2px red solid;
+    width: 236px;
+    height: 47px;
+}
+
+.set-text.sidetext{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidetext>p{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 
 /* fine container big */
