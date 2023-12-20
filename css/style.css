@@ -442,6 +442,20 @@ span .fa:first-child{
     bottom: 100px;
 }
 
+/* .col-text1{
+    position: absolute;
+    top: 350px;
+} */
+.col-text p{
+    width: 250px;
+    padding: 10px 0 0 0;
+    font-size: 14px;
+}
+.col-text h3{
+    width: 250px;
+    padding: 250px 0 0 0;
+    text-align: left;
+}
 
 
 .box{
