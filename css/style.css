@@ -319,6 +319,9 @@ span .fa:first-child{
     align-items: center;
 }
 
+/* fine .team4dropbox */
+
+/* sezione partner */
 
 .img-asidetext{
     display: flex;
@@ -331,7 +334,6 @@ span .fa:first-child{
 }
 
 .img-test{
-    /* background-color: violet; */
     position: relative;
     bottom: 115px;
     right: 150px;
@@ -376,8 +378,9 @@ span .fa:first-child{
     width: 150px;
 }
 
-#tag-section{
-}
+/* fine partner */
+
+/* inizio tag section */
 
 #tag-section .options{
     display: flex;
@@ -399,6 +402,47 @@ span .fa:first-child{
     width: calc(100% / 3 - 50px / 3 * 2);
     padding: 20px;
 }
+.options{
+    position: relative;
+}
+
+.opt img{
+    transform: scale(.25);
+}
+
+/* stilizzazione colonne con opzioni */
+.options .opt #img-col1{
+    position: absolute;
+    right: 360px;
+    bottom: 640px;
+}
+.options .opt #img-col2{
+    position: absolute;
+    right: 0;
+    bottom: 640px;
+}
+.options .opt #img-col3{
+    position: absolute;
+    left: 355px;
+    bottom: 640px;
+}
+.options .opt #img-col4{
+    position: absolute;
+    right: 350px;
+    bottom: 90px;
+}
+.options .opt #img-col5{
+    position: absolute;
+    right: 5px;
+    bottom: 80px;
+}
+.options .opt #img-col6{
+    position: absolute;
+    right: -350px;
+    bottom: 100px;
+}
+
+
 
 .box{
     width: 60%;
@@ -408,7 +452,6 @@ span .fa:first-child{
     height: 270px;
     margin-bottom: 30px;
 }
-/* fine .team4dropbox */
 
 /* inizio sponsor */
 /* test */
