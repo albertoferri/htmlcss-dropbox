@@ -18,7 +18,6 @@ header{
     height: 740px;
 }
 header h1{
-    border: 2px red solid;
     font-size: 62px;
     position: relative;
     top: 85px;
@@ -40,14 +39,39 @@ nav{
     background-color: #ffffff;
     padding: 20px;
     z-index: 2;
+    box-shadow: 0px 16px 16px 5px rgba(0,0,0,0.1);
 }
+
 
 .nav-left,.nav-right{
-    border: 2px red solid;
-    width: 400px;
-    /* test */
-
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    transition-duration: .3s;
+}
+nav a:not(:hover){
+    font-size: 16px;
+    transition-duration: .3s;
+}
+
+.nav-right a:nth-last-child(1){
+    background-color: #3d56fd;
+    color: white;
+    padding: 8px 14px;
+}
+
+
 /* fine navbar */
 
 /* container big */
@@ -65,28 +89,38 @@ nav{
 .text{
     width: 370px;
     height: 130px;
-    background-color: green;
 }
 
 .asidetext{
     display: flex;
     flex-flow: column nowrap;
-    gap: 20px;
+    gap: 30px;
     padding-top: 120px;
     padding-left: 70px;
 }
 
-.free-trial{
+.free-trial,.plans a{
     width: 236px;
     height: 47px;
     background-color: #3d56fd;
     color: white;
+    text-decoration: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.unsubscribe{
-    border: 2px red solid;
+
+.unsubscribe a{
     width: 236px;
     height: 47px;
+    text-decoration: none;
+    color: black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .set-text.sidetext{
@@ -107,6 +141,12 @@ nav{
     height: 488px;
 }
 
+.fa-arrow-down.fa{
+    position: relative;
+    font-size: 40px;
+    top: 50px;
+    right: 150px;
+}
 /* fine container big */
 
 /* fine header */
@@ -119,15 +159,15 @@ nav{
 .plans-container{
     width: 60%;
     min-width: 1000px;
-    max-height: 1200px;
+    height: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 100px 0;
 }
 
 
+
 h2{
-    border: 2px solid red;
     margin-bottom: 20px;
     margin-left: 0;
     width: 60%;
@@ -148,25 +188,101 @@ h2{
 }
 
 .plans{
-    border: blue 2px dotted;
-    flex-grow: 1;
     width: calc(100% / 3);
-    height: 700px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
 }
 
 h3{
-    padding: 10px;
     text-align: center;
 }
 
-.contacts,.plans>span{
+
+.plans h3{
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0 20px;   
+}
+
+#short-div-plans{
+    padding-bottom: 22px;
+}
+
+.plans a{
+    height: 47px;
+}
+
+.plans .how-often{
+    text-align: left;
+    color: grey;
+    padding: 0 0 20px;
+}
+
+#plan-name{
     display: block;
     text-align: center;
 }
 
+a.style-none-shop{
+    background-color: white;
+    color: -webkit-link;
+    margin: 0;
+    text-decoration: underline;
+    display: inline;
+}
+.upper-hr{
+    padding-bottom: 20px;
+}
+
+
+
+.highlights {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.highlights li{
+    line-height:30px;
+}
+
+.highlights li:before {
+    content: '\2714';
+    color: blue;
+    font-weight: 700;
+  }
+
+.indent{
+    padding-left: 13px;
+}
+.indent-top{
+    padding-left: 20px;
+}
+
+
 /* fine plans-container */
 
-.contacts{
+/* inizio .team4dropbox */
+span .fa{
+    display: inline;
+    text-align: center;
+}
+span .fa:first-child{
+    margin-right: 10px;
+}
+
+
+.team4dropbox span{
+    display: flex;
+    justify-content: center;
+}
+
+.team4dropbox{
     width: 60%;
     min-width: 1000px;
     margin-left: auto;
@@ -174,7 +290,35 @@ h3{
     height: 270px;
     border: blue 2px dotted;
     margin-bottom: 30px;
+    position: relative;
+    
 }
+.team4dropbox h3{
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px;   
+}
+.team4dropbox h4,p{
+    padding: 0 30px 30px;
+    max-width: 500px;
+}
+
+.team4dropbox a{
+    position: absolute;
+    top: 42px;
+    right: 40px;
+    
+    width: 236px;
+    height: 47px;
+    background-color: #3d56fd;
+    color: white;
+    text-decoration: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .img-asidetext{
     display: flex;
@@ -187,18 +331,60 @@ h3{
 }
 
 .img-test{
-    background-color: violet;
+    /* background-color: violet; */
+    position: relative;
+    bottom: 115px;
+    right: 150px;
+    
+    transform: scale(.5);
     height: 535px;
     min-width: 625px;
+    width: 60%;
 }
 
 .test.asidetext{
-    border: 2px dashed orangered;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding: 0 20px 0;
 }
 
-.options{
+.img-asidetext h3{
+    text-align: left;
+    padding-left: 0;
+}
+
+.img-asidetext a{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-asidetext a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    transition-duration: .3s;
+    width: 200px;
+}
+.img-asidetext a:not(:hover){
+    font-size: 16px;
+    transition-duration: .3s;
+    width: 150px;
+}
+
+#tag-section{
+}
+
+#tag-section .options{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 50px;
+
     width: 60%;
     min-width: 1000px;
     margin-left: auto;
@@ -206,13 +392,12 @@ h3{
     padding: 100px 0;
 }
 
-.opt{
-  flex-grow: 2;
-  padding: 20px;
-  border: 1px solid #ddd;
-  text-align: center;
-  width: 300px;
-  height: 450px;
+#tag-section .options .opt{
+    height: 500px;
+    border: dotted 2px darkblue;
+    
+    width: calc(100% / 3 - 50px / 3 * 2);
+    padding: 20px;
 }
 
 .box{
@@ -223,9 +408,30 @@ h3{
     height: 270px;
     margin-bottom: 30px;
 }
+/* fine .team4dropbox */
 
-
+/* inizio sponsor */
+/* test */
 .adv-container{
+    display: flex;
+}
+
+.adv-container .sponsor,.text-overflow{
+    border: 1px dotted navy;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
+
+.adv-container .square{
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+
+
+
+/* .adv-container{
     display: flex;
     width: 100%;
 }
@@ -269,7 +475,8 @@ h3{
     background-color: #f5f5f5;
     min-width: calc(100% / 3);
     height: 666px;
-}
+} */
+/* fine sponsor */
 
 /* inizio advice */
 .advice{
@@ -290,6 +497,7 @@ h3{
 .advice span{
     color: #5f0a2b;
     font-size: 32px;
+    font-weight: 700;
     margin-top: 20px;
     height: 100px;
     width: 370px;
@@ -324,9 +532,6 @@ h3{
 .faq h3{
     padding: 45px 0;
 }
-
-
-
 
 /* fine sezione FAQ */
 
@@ -376,6 +581,16 @@ footer .footer-column{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+#language{
+    display: flex;
+    gap: 10px;
+}
+
+.fa{
+    align-self: center;
+    margin-right: 5px;
 }
 
 #short-hr{
