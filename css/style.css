@@ -111,6 +111,10 @@ nav a:not(:hover){
     align-items: center;
 }
 
+.free-trial>a{
+    color: white;
+    text-decoration: none;
+}
 
 .unsubscribe a{
     width: 236px;
@@ -154,6 +158,8 @@ nav a:not(:hover){
 
 
 /* inizio main */
+
+
 /* inizio plans-container */
 
 .plans-container{
@@ -177,6 +183,8 @@ h2{
 }
 
 .plans-btn{
+    display: flex;
+    gap: 30px;
     padding-bottom: 20px;
     max-width: 400px;
 }
@@ -239,8 +247,6 @@ a.style-none-shop{
     padding-bottom: 20px;
 }
 
-
-
 .highlights {
     list-style: none;
     padding-top: 20px;
@@ -254,7 +260,7 @@ a.style-none-shop{
     content: '\2714';
     color: blue;
     font-weight: 700;
-  }
+}
 
 .indent{
     padding-left: 13px;
@@ -263,6 +269,33 @@ a.style-none-shop{
     padding-left: 20px;
 }
 
+input:checked + label {
+    color: black;
+    text-decoration: underline;
+}
+
+input:not(:checked) + label {
+    text-decoration: none;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    background-color: #d1d3d1;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    background-color: #3d56fd;
+    border: 2px solid white;
+}
 
 /* fine plans-container */
 
@@ -423,7 +456,7 @@ span .fa:first-child{
 }
 .options .opt #img-col2{
     position: absolute;
-    right: 0;
+    right: 5px;
     bottom: 640px;
 }
 .options .opt #img-col3{
@@ -433,7 +466,7 @@ span .fa:first-child{
 }
 .options .opt #img-col4{
     position: absolute;
-    right: 350px;
+    right: 355px;
     bottom: 90px;
 }
 .options .opt #img-col5{
@@ -443,8 +476,8 @@ span .fa:first-child{
 }
 .options .opt #img-col6{
     position: absolute;
-    right: -350px;
-    bottom: 100px;
+    right: -345px;
+    bottom: 110px;
 }
 
 
@@ -638,15 +671,48 @@ span .fa:first-child{
     margin-right: auto;
 }
 
-.faq-menu span{
+.faq-menu .change-icon{
     align-self: center;
 }
 
 .faq h3{
-    justify-content: space-between;
     padding: 45px 0;
     font-size: 14px;
 }
+
+/* parte bonus */
+
+.hidden,span>.fa-chevron-up{
+    display: none;
+}
+
+.faq-menu:hover + .hidden{
+    display: block;
+}
+
+/* .fa-chevron-down:not(:hover){
+    display: block;
+}
+
+.fa-chevron-up:hover{
+    display: block;
+} */
+
+
+
+.hidden p{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+    padding-bottom: 20px;
+}
+
+
+
+/* fine parte bonus */
+
+
 
 /* fine sezione FAQ */
 
