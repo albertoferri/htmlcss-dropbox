@@ -168,8 +168,7 @@ nav a:not(:hover){
 
 
 h2{
-    margin-bottom: 20px;
-    margin-left: 0;
+    margin-bottom: 30px;
     width: 60%;
     min-width: 1000px;
     margin-left: auto;
@@ -298,7 +297,10 @@ span .fa:first-child{
     justify-content: flex-start;
     padding: 30px;   
 }
-.team4dropbox h4,p{
+#pad-int-plan{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     padding: 0 30px 30px;
     max-width: 500px;
 }
@@ -397,8 +399,11 @@ span .fa:first-child{
 
 #tag-section .options .opt{
     height: 500px;
-    border: dotted 2px darkblue;
-    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 25px;
+
     width: calc(100% / 3 - 50px / 3 * 2);
     padding: 20px;
 }
@@ -442,10 +447,7 @@ span .fa:first-child{
     bottom: 100px;
 }
 
-/* .col-text1{
-    position: absolute;
-    top: 350px;
-} */
+
 .col-text p{
     width: 250px;
     padding: 10px 0 0 0;
@@ -456,7 +458,7 @@ span .fa:first-child{
     padding: 250px 0 0 0;
     text-align: left;
 }
-
+/* fine stilizzazione colonne */
 
 .box{
     width: 60%;
@@ -469,70 +471,95 @@ span .fa:first-child{
 
 /* inizio sponsor */
 /* test */
-.adv-container{
+.adv-container {
     display: flex;
 }
 
 .adv-container .sponsor,.text-overflow{
-    border: 1px dotted navy;
     width: calc(100vw / 3);
     height: calc(100vw / 3);
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    padding: 10px;
 }
 
-.adv-container .square{
-    width: 50%;
-    height: 50%;
-    border: 1px solid black;
-}
-
-
-
-
-/* .adv-container{
-    display: flex;
-    width: 100%;
-}
-
-.sponsor{
+.sponsor {
     display: flex;
     flex-wrap: wrap;
 }
 
-.square{
-    width: 333px;
-    height: 333px;
-}
-
-
-.sponsor {
-  width: 666px;
-  height: auto;
-  display: flex;
-  flex-grow: 1;
-}
-
 .square {
-  background-color: orangered;
+  /* background-color: orangered; */
   position: relative;
   width: 50%;
   display: block;
   margin: 0;
 }
 
-.square > div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 10px;
+.square img{
+    transform: scale(.3);
 }
 
-.text-overflow{
-    background-color: #f5f5f5;
-    min-width: calc(100% / 3);
-    height: 666px;
-} */
+.sponsor:first-child .square:first-child{
+    background-color: #a2d49c;
+}
+.sponsor:first-child .square:nth-child(2){
+    background-color: #5f0a2b;
+}
+.sponsor:first-child .square:nth-child(3){
+    background-color: #3190cd;
+}
+.sponsor:first-child .square:last-child{
+    background-color: #f92825;
+}
+
+.sponsor:last-child .square:first-child{
+    background-color: #d01125;
+}
+.sponsor:last-child .square:nth-child(2){
+    background-color: #b7cfe6;
+}
+.sponsor:last-child .square:nth-child(3){
+    background-color: #1f1c80;
+}
+.sponsor:last-child .square:last-child{
+    background-color: #fadb3c;
+}
+
+
+#img1topleft{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+
+#img-overflow{
+    transform: scale(.8);
+    position: relative;
+    right: 40px;
+}
+
+.text-overflow p{
+    padding: 30px 10px 50px ;
+}
+
+.text-overflow a{
+    color: black;
+    text-decoration: none;
+}
+
+.text-overflow a:hover{
+    font-size: 1.1em;
+    transition-duration: .3s;
+    text-decoration: underline;
+}
+.text-overflow a:not(:hover){
+    font-size: 1em;
+    transition-duration: .3s;
+}
+
 /* fine sponsor */
 
 /* inizio advice */
@@ -583,11 +610,25 @@ span .fa:first-child{
 }
 
 .faq h2{
-    padding: 170px 0 75px;
+    padding: 170px 90px 40px;
+}
+
+.faq-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-menu span{
+    align-self: center;
 }
 
 .faq h3{
+    justify-content: space-between;
     padding: 45px 0;
+    font-size: 14px;
 }
 
 /* fine sezione FAQ */
@@ -650,7 +691,10 @@ footer .footer-column{
     margin-right: 5px;
 }
 
-#short-hr{
+#short-hr {
+    width: 126px;
+}
+#short-hr2{
     width: 126px;
 }
 
