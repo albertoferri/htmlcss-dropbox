@@ -14,11 +14,12 @@ body{
 header{
     background-color: #b7cfe6;
     max-width: 100vw;
-    height: 740px;
+    height: 750px;
     padding-top: 80px;
 }
 header h1{
     font-size: 62px;
+    padding-top: 40px;
 }
 
 
@@ -26,7 +27,7 @@ header h1{
 /* inizio navbar */
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     position: fixed;
     top: 0;
@@ -96,7 +97,7 @@ nav a:not(:hover){
     display: flex;
     flex-flow: column nowrap;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-left: 70px;
 }
 
@@ -140,6 +141,9 @@ nav a:not(:hover){
 
 .unsubscribe a:hover{
     font-size: 17px;
+    border: 1px solid #3d56fd;
+    border-radius: 15px;
+    width: 245px;
     transition-duration: .3s;
 }
 .unsubscribe a:not(:hover){
@@ -161,7 +165,7 @@ nav a:not(:hover){
 
 #img-header{
     position: relative;
-    top: 50px;
+    top: 30px;
     width: 820px;
     height: 488px;
 }
@@ -196,7 +200,7 @@ nav a:not(:hover){
 
 h2{
     margin-bottom: 30px;
-    width: 60%;
+    /* width: 60%; */
     min-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -446,6 +450,7 @@ span .fa:first-child{
 .img-asidetext a:hover{
     font-size: 20px;
     text-decoration: underline;
+    background-color: lightgrey;
     transition-duration: .3s;
     width: 200px;
 }
@@ -473,6 +478,9 @@ span .fa:first-child{
 }
 
 #tag-section .options .opt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 500px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
@@ -628,18 +636,19 @@ span .fa:first-child{
 }
 
 .prova{
-    width: 100%; 
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
     padding: 20px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; 
 }
 .advice span{
     color: #5f0a2b;
     font-size: 32px;
     font-weight: 700;
     height: 100px;
-    width: 370px;
+    width: 400px;
 }
 
 .advice .free-trial{
@@ -652,13 +661,14 @@ span .fa:first-child{
 }
 
 .advice .free-trial:hover{
-    font-size: 1.1em;
+    font-size: 19px;
+    background-color: lightgrey;
     cursor: pointer;
     transition-duration: .3s;
     text-decoration: underline;
 }
 .advice .free-trial:not(:hover){
-    font-size: 1em;
+    font-size: 18px;
     transition-duration: .3s;
 }
 
@@ -670,7 +680,7 @@ span .fa:first-child{
 }
 
 .faq hr{
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -682,7 +692,7 @@ span .fa:first-child{
 .faq-menu{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -708,16 +718,16 @@ span .fa:first-child{
 
 .faq-menu>h3:hover #icon {
     transform: rotate(180deg);
-    transition: transform 0.3s ease
+    transition-duration: .3s;
 }
 
 #icon{
     display: inline-block;
-    transition: transform 0.3s ease; 
+    transition-duration: .3s;
   }
 
 .hidden p{
-    width: 45%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     font-size: small;
@@ -752,7 +762,7 @@ footer{
 }
 
 footer .footer-column{
-    padding: 10px;
+    padding: 5px;
     flex-grow: 1;
 }
 
@@ -811,6 +821,8 @@ footer .footer-column{
 /* finefooter */
 
 
+
+/* stilizzazione scrollbar  */
 /* Firefox */
 * {
     scrollbar-width: thin;
