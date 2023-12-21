@@ -12,15 +12,13 @@ body{
 
 /* inizio header */
 header{
-    position: relative;
     background-color: #b7cfe6;
     width: 100%;
     height: 740px;
+    padding-top: 80px;
 }
 header h1{
     font-size: 62px;
-    position: relative;
-    top: 85px;
 }
 
 
@@ -83,7 +81,9 @@ nav a:not(:hover){
     justify-content: center;
     align-items: center;
     gap: 20px;
-    min-width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text{
@@ -95,7 +95,7 @@ nav a:not(:hover){
     display: flex;
     flex-flow: column nowrap;
     gap: 30px;
-    padding-top: 120px;
+    margin-top: 50px;
     padding-left: 70px;
 }
 
@@ -116,6 +116,16 @@ nav a:not(:hover){
     text-decoration: none;
 }
 
+.free-trial>a:hover{
+    font-size: 17px;
+    transition-duration: .3s;
+}
+.free-trial>a:not(:hover){
+    font-size: 16px;
+    transition-duration: .3s;
+}
+
+
 .unsubscribe a{
     width: 236px;
     height: 47px;
@@ -127,9 +137,19 @@ nav a:not(:hover){
     align-items: center;
 }
 
+.unsubscribe a:hover{
+    font-size: 17px;
+    transition-duration: .3s;
+}
+.unsubscribe a:not(:hover){
+    font-size: 16px;
+    transition-duration: .3s;
+}
+
 .set-text.sidetext{
     display: flex;
     gap: 20px;
+    /* padding-top: 20px; */
 }
 
 .sidetext>p{
@@ -140,7 +160,7 @@ nav a:not(:hover){
 
 #img-header{
     position: relative;
-    top: 120px;
+    top: 50px;
     width: 820px;
     height: 488px;
 }
@@ -217,9 +237,6 @@ h3{
     padding: 30px 0 20px;   
 }
 
-#short-div-plans{
-    padding-bottom: 22px;
-}
 
 .plans a{
     margin: 30px 20px 30px;
@@ -462,48 +479,14 @@ span .fa:first-child{
     border-radius: 25px;
 
     width: calc(100% / 3 - 50px / 3 * 2);
-    padding: 20px;
+    padding: 20px 30px;
 }
-.options{
-    position: relative;
-}
+
 
 .opt img{
-    transform: scale(.25);
+    width: 260px;
+    padding-left: 30px;
 }
-
-/* stilizzazione colonne con opzioni */
-.options .opt #img-col1{
-    position: absolute;
-    right: 360px;
-    bottom: 640px;
-}
-.options .opt #img-col2{
-    position: absolute;
-    right: 5px;
-    bottom: 640px;
-}
-.options .opt #img-col3{
-    position: absolute;
-    left: 355px;
-    bottom: 640px;
-}
-.options .opt #img-col4{
-    position: absolute;
-    right: 355px;
-    bottom: 90px;
-}
-.options .opt #img-col5{
-    position: absolute;
-    right: 5px;
-    bottom: 80px;
-}
-.options .opt #img-col6{
-    position: absolute;
-    right: -345px;
-    bottom: 110px;
-}
-
 
 .col-text p{
     width: 250px;
@@ -512,7 +495,7 @@ span .fa:first-child{
 }
 .col-text h3{
     width: 250px;
-    padding: 250px 0 0 0;
+    padding-top: 20px;
     text-align: left;
 }
 /* fine stilizzazione colonne */
@@ -722,13 +705,15 @@ span .fa:first-child{
     display: block;
 }
 
-.change-icon:hover{
+.faq-menu>h3:hover #icon {
     transform: rotate(180deg);
+    transition: transform 0.3s ease
 }
 
-
-
-
+#icon{
+    display: inline-block;
+    transition: transform 0.3s ease; 
+  }
 
 .hidden p{
     width: 45%;
