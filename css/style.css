@@ -13,7 +13,7 @@ body{
 /* inizio header */
 header{
     background-color: #b7cfe6;
-    width: 100%;
+    max-width: 100vw;
     height: 740px;
     padding-top: 80px;
 }
@@ -26,7 +26,7 @@ header h1{
 /* inizio navbar */
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     position: fixed;
     top: 0;
@@ -47,6 +47,7 @@ nav{
     align-items: center;
     gap: 20px;
 }
+
 
 nav a{
     color: black;
@@ -277,7 +278,7 @@ a.style-none-shop{
 .highlights {
     display: flex;
     flex-direction: column;
-    gap: 10pxpx;
+    gap: 5px;
     list-style: none;
     padding-top: 20px;
     font-size: smaller;
@@ -485,7 +486,8 @@ span .fa:first-child{
 
 .opt img{
     width: 260px;
-    padding-left: 30px;
+    position: relative;
+    left: 5px;
 }
 
 .col-text p{
@@ -636,7 +638,6 @@ span .fa:first-child{
     color: #5f0a2b;
     font-size: 32px;
     font-weight: 700;
-    margin-top: 20px;
     height: 100px;
     width: 370px;
 }
@@ -769,6 +770,17 @@ footer .footer-column{
     margin: 20px 0;
 }
 
+.footer-column, li a,
+#language a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column li a
+#language a:hover{
+    text-decoration: underline;
+}
+
 #lang-set{
     width: 1200px;
     height: 125px;
@@ -797,3 +809,43 @@ footer .footer-column{
 }
 
 /* finefooter */
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #0061FE #FFFFFF;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #0061FE;
+    border: 2px outset #242121;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #0061FE;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #0061FE;
+  }
+  
